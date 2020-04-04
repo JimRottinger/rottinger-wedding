@@ -4,15 +4,24 @@
   "description": "Rottinger Saulenas Wedding 2021",
   "main": "main.js",
   "scripts": {
-    "format": "npx prettier --write \"./**/*.{ts,js,jsx,tsx,html}\"",
+    "build": "npx parcel build index.html",
+    "dev": "npx parcel index.html",
+    "format": "npx prettier --write \"src/**/*.{ts,js,jsx,tsx,html}\"",
+    "lint": "npx eslint \"src/**/*.{js,ts,jsx,tsx}\" --quiet",
     "start": "node server.js"
   },
   "author": "Jim Rottinger",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-react": "^7.19.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.2"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
