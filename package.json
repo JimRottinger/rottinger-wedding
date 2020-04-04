@@ -1,0 +1,19 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "Rottinger Saulenas Wedding 2021",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "test"
+  },
+  "author": "Jim Rottinger",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
