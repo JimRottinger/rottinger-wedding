@@ -7,12 +7,10 @@ const { Title, Paragraph, Text } = Typography
 
 const { Header, Sider, Content } = Layout
 
-import 'antd/dist/antd.css'
-
 const shadowbrookImage = require('./../img/shadowbrook.png')
 const ourStoryImage = require('./../img/our-story.jpg')
 
-const RootComponent = () => {
+const App = () => {
   return (
     <>
       <Layout
@@ -97,11 +95,12 @@ const RootComponent = () => {
                 <br />
                 <Text>
                   There has certainly always been a connection between us from
-                  that first day we met, but it was no happily ever after
-                  moment. We were just friends throughout all of college until
-                  the very end. We went on a few dates during our last semester,
-                  but then our careers took Jim to San Francisco and Aileen to
-                  Northeast Philly, and we fell out of touch for a while...
+                  that first day we met, but this was not our happily ever after
+                  moment...yet. We were just friends throughout all of college
+                  until the very end. We went on a few dates during our last
+                  semester, but then our careers took Jim to San Francisco and
+                  Aileen to Northeast Philly, and we fell out of touch for a
+                  while...
                 </Text>
                 <br />
                 <br />
@@ -129,10 +128,11 @@ const RootComponent = () => {
                 <br />
                 <br />
                 <Text>
-                  We started dating shortly thereafter. It must have been a good
-                  thing because when we told our friends that we were together,
-                  they all said some form of "Finally!" or "When's the wedding?"
-                  - as if everyone around us knew it before we did.
+                  And so, we started dating shortly thereafter. It must have
+                  been a good thing because when we told our friends that we
+                  were together, they all said some form of "Finally!" or
+                  "When's the wedding?" - as if everyone around us knew it
+                  before we did.
                 </Text>
                 <br />
                 <br />
@@ -164,4 +164,4 @@ const RootComponent = () => {
   )
 }
 
-ReactDom.render(<RootComponent />, document.getElementById('react-root'))
+export default App

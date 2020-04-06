@@ -1,6 +1,6 @@
-runtime: nodejs10
+runtime: nodejs12
 handlers:
-- url: /.*
-  secure: always
-  script: auto
-  redirect_http_response_code: 301
+  - url: /.*
+    secure: always
+    script: auto
+    redirect_http_response_code: 301
